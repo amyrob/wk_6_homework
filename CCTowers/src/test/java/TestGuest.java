@@ -12,13 +12,22 @@ public class TestGuest {
 
     @Before
     public void before() {
-        guest = new Guest();
+        guest = new Guest("Brodie Robertson");
         room = new Bedroom(RoomNumber.ROOM1, 100);
+    }
+
+    @Test
+    public void canGetname() {
+        assertEquals("Brodie Robertson", guest.getName());
     }
     @Test
     public void canAddGuestToRoom() {
         room.add(guest);
         assertEquals(1, room.count());
     }
-
+    @Test
+    public void canRemoveGuestFromRoom() {
+        room.remove(guest);
+        assertEquals(0, room.count());
+    }
 }

@@ -1,6 +1,6 @@
 package Hotel.Room;
 
-public enum RoomNumber {
+public enum RoomDetails {
     ROOM1(1, "Single"),
     ROOM2(2, "Double"),
     CONFERENCEROOM1(50, "Conference"),
@@ -9,7 +9,7 @@ public enum RoomNumber {
     private int capacity;
     private String type;
 
-    RoomNumber(int capacity, String type) {
+    RoomDetails(int capacity, String type) {
         this.capacity = capacity;
         this.type = type;
 

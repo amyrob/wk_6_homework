@@ -1,10 +1,9 @@
 package Hotel.Room;
-import Hotel.Guest;
 
 public class ConferenceRoom extends Room {
     private int dailyRate;
 
-    public ConferenceRoom(RoomNumber roomNumber, Guest guest, int dailyRate) {
+    public ConferenceRoom(RoomDetails roomNumber, int dailyRate) {
         super(roomNumber);
         this.dailyRate = dailyRate;
     }

@@ -8,11 +8,10 @@ import static org.junit.Assert.assertEquals;
 
 public class TestConferenceRoom {
     ConferenceRoom  conferenceRoom;
-    Guest  guest;
 
     @Before
     public void before() {
-        conferenceRoom = new ConferenceRoom(RoomNumber.CONFERENCEROOM1, guest, 1000);
+        conferenceRoom = new ConferenceRoom(RoomNumber.CONFERENCEROOM1, 1000);
     }
 
     @Test

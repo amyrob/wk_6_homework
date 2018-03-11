@@ -5,14 +5,12 @@ import Hotel.Guest;
 import java.util.ArrayList;
 
 public abstract class Room {
-    private Room room;
     private RoomNumber roomNumber;
-    private ArrayList<Guest> guest;
+    private ArrayList<Guest> guests;
 
-    public Room(RoomNumber roomNumber) {
-        this.room = room;
+    public Room(RoomDetails roomNumber) {
         this.roomNumber = roomNumber;
-        this.guest = new ArrayList<>();
+        this.guests = new ArrayList<>();
     }
 
     public RoomNumber getRoomNumber() {
@@ -27,13 +25,15 @@ public abstract class Room {
         return roomNumber.type();
     }
 
-    public void add(Guest guest1) {
-        this.guest.add(guest1);
+    public void add(Guest guest) {
+        this.guests.add(guest);
     }
 
     public int count() {
-        return this.guest.size();
+        return this.guests.size();
     }
 
-
+    public void remove(Guest guest) {
+        this.guests.remove(guest);
+    }
 }

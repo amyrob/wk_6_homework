@@ -1,9 +1,13 @@
 package Hotel;
 
 public class Guest {
-    private Guest guest;
-    public Guest() {
-        this.guest = guest;
+    private String name;
 
+    public Guest(String name) {
+        this.name = name;
+
+    }
+    public String getName() {
+        return name;
     }
 }
