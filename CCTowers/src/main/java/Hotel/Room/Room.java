@@ -35,13 +35,5 @@ public abstract class Room {
         return this.guest.size();
     }
 
-    public int checkInGuest(Guest guest1) {
-        if (count() < roomNumber.getCapacity()) add(guest1);
-        return count();
-    }
 
-    public int checkOutGuest() {
-        if (count()!= 0) guest.clear();
-        return count();
-    }
 }

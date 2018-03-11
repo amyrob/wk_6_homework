@@ -21,16 +21,4 @@ public class TestGuest {
         assertEquals(1, room.count());
     }
 
-    @Test
-        public void canCheckInGuest() {
-        room.checkInGuest(guest);
-        assertEquals(1, room.count());
-    }
-
-    @Test
-    public void canCheckOutGuest() {
-        room.checkOutGuest();
-        assertEquals(0, room.count());
-    }
-
 }
