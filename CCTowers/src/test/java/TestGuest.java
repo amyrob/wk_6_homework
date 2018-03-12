@@ -1,6 +1,6 @@
 import Hotel.Guest;
 import Hotel.Room.Bedroom;
-import Hotel.Room.RoomNumber;
+import Hotel.Room.RoomDetails;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -13,7 +13,7 @@ public class TestGuest {
     @Before
     public void before() {
         guest = new Guest("Brodie Robertson");
-        room = new Bedroom(RoomNumber.ROOM1, 100);
+        room = new Bedroom(RoomDetails.ROOM1, 100);
     }
 
     @Test

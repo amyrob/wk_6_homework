@@ -5,7 +5,7 @@ import Hotel.Guest;
 import java.util.ArrayList;
 
 public abstract class Room {
-    private RoomNumber roomNumber;
+    private RoomDetails roomNumber;
     private ArrayList<Guest> guests;
 
     public Room(RoomDetails roomNumber) {
@@ -13,7 +13,7 @@ public abstract class Room {
         this.guests = new ArrayList<>();
     }
 
-    public RoomNumber getRoomNumber() {
+    public RoomDetails getRoomNumber() {
         return this.roomNumber;
     }
 

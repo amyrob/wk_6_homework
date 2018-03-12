@@ -1,6 +1,7 @@
-import Hotel.Guest;
+
 import Hotel.Room.Bedroom;
-import Hotel.Room.RoomNumber;
+import Hotel.Room.RoomDetails;
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -11,12 +12,12 @@ public class TestBedroom {
 
     @Before
     public void before() {
-        bedroom = new Bedroom(RoomNumber.ROOM1, 100 );
+        bedroom = new Bedroom(RoomDetails.ROOM1, 100 );
     }
 
     @Test
     public void canGetRoomNumber() {
-        assertEquals(RoomNumber.ROOM1, bedroom.getRoomNumber());
+        assertEquals(RoomDetails.ROOM1, bedroom.getRoomNumber());
     }
 
     @Test

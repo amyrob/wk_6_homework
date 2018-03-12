@@ -1,6 +1,6 @@
 import Hotel.Guest;
 import Hotel.Room.DiningRoom;
-import Hotel.Room.RoomNumber;
+import Hotel.Room.RoomDetails;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -12,7 +12,7 @@ public class TestDiningRoom {
 
     @Before
     public void before() {
-        diningRoom = new DiningRoom(RoomNumber.AZURE, guest, 75);
+        diningRoom = new DiningRoom(RoomDetails.AZURE, guest, 75);
     }
 
     @Test

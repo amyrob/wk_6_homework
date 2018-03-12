@@ -1,6 +1,6 @@
 import Hotel.Guest;
 import Hotel.Room.ConferenceRoom;
-import Hotel.Room.RoomNumber;
+import Hotel.Room.RoomDetails;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -11,7 +11,7 @@ public class TestConferenceRoom {
 
     @Before
     public void before() {
-        conferenceRoom = new ConferenceRoom(RoomNumber.CONFERENCEROOM1, 1000);
+        conferenceRoom = new ConferenceRoom(RoomDetails.CONFERENCEROOM1, 1000);
     }
 
     @Test
