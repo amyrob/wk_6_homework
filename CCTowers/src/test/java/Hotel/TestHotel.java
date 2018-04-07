@@ -1,5 +1,5 @@
 package Hotel;
-import Hotel.Room.*;
+import Room.*;
 import org.junit.Before;
 import org.junit.Test;
 

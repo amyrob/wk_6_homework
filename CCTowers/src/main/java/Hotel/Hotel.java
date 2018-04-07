@@ -1,10 +1,9 @@
 package Hotel;
 
-import Hotel.Room.*;
+import Room.*;
 
 import java.util.ArrayList;
 
-import static com.sun.tools.internal.xjc.reader.Ring.add;
 
 public class Hotel {
     private String name;
@@ -21,7 +20,7 @@ public class Hotel {
 
     public int checkGuestInToBedroom(Guest guest, RoomDetails roomNumber) {
         for (Bedroom bedroom : bedrooms) {
-            if (bedrooms.size() < roomNumber.getCapacity()) ;
+            if (bedrooms.size() < roomNumber.getCapacity())
             {
                 bedroom.add(guest);
             }
@@ -41,7 +40,7 @@ public class Hotel {
 
     public int checkGuestInToDiningRoom(Guest guest, RoomDetails roomNumber) {
         for (DiningRoom diningRoom : diningRooms) {
-            if (diningRooms.size() < roomNumber.getCapacity()) ;
+            if (diningRooms.size() < roomNumber.getCapacity())
             {
                 diningRoom.add(guest);
             }
@@ -61,7 +60,7 @@ public class Hotel {
 
     public int checkGuestInToConferenceRoom(Guest guest, RoomDetails roomNumber) {
         for (ConferenceRoom conferenceRoom : conferenceRooms) {
-            if (conferenceRooms.size() < roomNumber.getCapacity()) ;
+            if (conferenceRooms.size() < roomNumber.getCapacity())
             {
                 conferenceRoom.add(guest);
             }

@@ -3,8 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/CCTowers.iml" filepath="$PROJECT_DIR$/.idea/modules/CCTowers.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CCTowers_main.iml" filepath="$PROJECT_DIR$/.idea/modules/CCTowers_main.iml" group="CCTowers" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CCTowers_test.iml" filepath="$PROJECT_DIR$/.idea/modules/CCTowers_test.iml" group="CCTowers" />
     </modules>
   </component>
 </project>

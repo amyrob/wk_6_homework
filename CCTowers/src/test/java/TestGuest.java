@@ -1,6 +1,6 @@
 import Hotel.Guest;
-import Hotel.Room.Bedroom;
-import Hotel.Room.RoomDetails;
+import Room.Bedroom;
+import Room.RoomDetails;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -27,7 +27,9 @@ public class TestGuest {
     }
     @Test
     public void canRemoveGuestFromRoom() {
+        room.add(guest);
+        room.add(guest);
         room.remove(guest);
-        assertEquals(0, room.count());
+        assertEquals(1, room.count());
     }
 }
